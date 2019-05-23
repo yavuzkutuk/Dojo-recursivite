@@ -22,8 +22,6 @@ function toRoman($nombreArabe, $nombreRomain = ""){
         $i--;
     }
 
-    //echo $keys[$i].'-'.$nombreArabe.'-'.$nombreRomain.'<hr>';
-
     return toRoman($nombreArabe - $keys[$i], $nombreRomain . $tab[$keys[$i]]);
 }
 
